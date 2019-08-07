@@ -29,7 +29,7 @@ export default {
     ...mapGetters("drizzle", ["drizzleInstance", "isDrizzleInitialized"]),
     ...mapGetters("contracts", ["getContractData"]),
 
-    // Subscribe to the getNames method of your smart contract. 
+    // Subscribe to the getNames method of your smart contract.
     // In case there's no data yet, return false to prevent display errors.
     getNames() {
       let data = this.getContractData({
@@ -64,7 +64,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  padding: 20px;
 }
 ul {
   padding: 0px;
@@ -72,5 +72,32 @@ ul {
 ul,
 li {
   list-style: none;
+}
+
+li {
+  font-size: 1.5em;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  margin-top: 40px;
+  font-size: 2em;
+}
+input[type="text"] {
+  font-size: 1.2em;
+  border: none;
+  border-bottom: 1px solid #2c3e50;
+  padding-left: 7px;
+}
+#app > form > button {
+  font-size: 1.2em;
+  color: #2c3e50;
+  margin-left: 16px;
+  border: none;
+}
+#app > form > button:hover {
+  opacity: .8;
+  cursor: pointer;
 }
 </style>
